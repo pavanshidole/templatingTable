@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>grade</th>
+                    <th>enrolled</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let stud of students; let i=index">
+                    <td>{{stud.id}}</td>
+                    <td>{{stud.name}}</td>
+                    <td>{{stud.grade}}</td>
+                    <td>{{stud.enrolled}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

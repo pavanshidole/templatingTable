@@ -1,0 +1,26 @@
+
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>category</th>
+                    <th>stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let prod of products; let i=index">
+                    <td>{{prod.id}}</td>
+                    <td>{{prod.name}}</td>
+                    <td>{{prod.price}}</td>
+                    <td>{{prod.category}}</td>
+                    <td>{{prod.stock}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

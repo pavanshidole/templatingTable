@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>username</th>
+                    <th>level</th>
+                    <th>score</th>
+                    <th>online</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let plr of players; let i=index">
+                    <td>{{plr.id}}</td>
+                    <td>{{plr.username}}</td>
+                    <td>{{plr.level}}</td>
+                    <td>{{plr.score}}</td>
+                    <td>{{plr.online}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
